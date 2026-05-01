@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <title> Trote Solidário </title>
+    </head>
+    <body>
+       <nav class="menu-principal">
+        <div class="menu-container">
+            <a href="index.html" class="logo"> Trote 2026 </a>
+            <ul class="lista">
+                <li> <a href="index.html"> Início </a> </li> 
+                <li> <a href="introducao.html"> Introdução </a></li>
+                <li> <a href="formato.html"> Formato </a> </li> 
+                <li> <a href="equipes.html"> Equipes </a> </li>
+                <li> <a href="provas.html"> Provas & Metas </a> </li> 
+                <li> <a href="integracao.html"> Integração </a> </li>
+                <li> <a href="cronograma.html"> Cronograma </a> </li> 
+                <li> <a href="calculadora.html"> Calculadora </a> </li>
+            </ul>    
+        </div> 
+       </nav>
+     
+       <main class="principal">
+            <section>
+                <h3>🧮 Simulador de Pontos - Itens Avulsos</h3>
+                <div>
+                    <div class="form-group">
+                        <!---Rotulo da caixa-->
+                        <label>🌾 Arroz (5kg)</label>
+                        <!--caixa de texto com valor inicial de 0 e minimo de 0-->
+                        <input type="number" value="0" min="0" id ="qtdArroz">
+                    </div>
+                    <div class="form-group">
+                        <label>🫘 Feijão (2kg)</label>
+                        <input type="number" value="0" min="0" id ="qtdFeijao">
+
+                    </div>
+                    <div class ="form-group">
+                         <label>🌰 Oleo (1Un)</label>
+                        <!--caixa de texto com valor inicial de 0 e minimo de 0-->
+                        <input type="number" value="0" min="0" id ="qtdOleo">
+                    </div>
+                    <div class="form-group">
+                        <label>🍝 Macarrao (500g)</label>
+                        <input type="number" value="0" min="0" id ="qtdMacarrao">
+
+                    </div>
+             
+            </section>
+
+            <section>
+                <h3>Simulador de Pontos - Metas Batidas</h3>
+                <div>
+                    <div class="form-group">
+                        <label for="Escolha a cor do time"></label>
+                        <select id="cor">
+                            <option value ="verde" class="time_verde">Verde</option>
+                            <option value ="vermelho" class="time_vermelho">Vermelho</option>
+                            <option value ="laranja" class="time_laranja">Laranja</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantidade de Kits Alimentação</label>
+                        <input type="number" value="0" min="0" id ="qtdKits">
+                    </div>
+                    <div class="form-group">
+                        <label>Quantidade de Suplementos</label>
+                        <input type="number" value="0" min="0" id ="qtdSuplemento">
+                    </div>
+                    <div class="form-group">
+                        <label>Quantidade de Leite</label>
+                        <input type="number" value="0" min="0" id ="qtdLeite">
+                    </div>
+
+                    <div class ="form-group">
+                        <label>Quantidade de Doação de Sangue</label>
+                        <input type="number" value="0" min="0" id ="qtdDoacaoSangue">
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div>
+                    <!--quando o botao for clicado chama uma função calcular no javascript -->
+                    <button onclick="calcular()">Calcular total</button>
+                    <div id="result" class="resultado">
+                        🎯Pontuação total: 0 Pontos
+                    </div>
+                </div>
+
+            </section>
+       </main>    
+        <footer>
+            <p>Coordenação Trote Solidário 2026: trotesolidario@facef.br </p>
+            <p>Uni-FACEF - Centro Universitário Municipal de Franca </p>
+        </footer> 
+    </body>
+</html>
